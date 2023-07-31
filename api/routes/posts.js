@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { findById } = require("../models/Category");
-const User = require("../models/user");
+const User = require("../models/User");
 const Post = require("../models/Post")
 
 //CREATE A NEW POST:

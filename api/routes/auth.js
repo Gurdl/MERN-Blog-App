@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const User = require("../models/user");
+const User = require("../models/User");
 const bcrypt = require('bcrypt'); //This is used for encrption of passwords
 
 //Register
