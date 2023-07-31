@@ -1,0 +1,60 @@
+.Login{
+    font-family: 'Arvo', serif;
+    height:calc(100vh - 50px);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background:  linear-gradient(rgba(255,255,255,0.5),
+    rgba(255,255,255,0.5)),url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+    background-size: cover;
+    align-items: center;
+}
+.LoginTitle{
+    font-size: 50px;
+}
+.loginForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width:550px
+}
+.loginForm > label{
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+}
+.LoginInput{
+    padding:10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+.loginButton{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: lightcoral;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    padding:10px;
+    align-self: center;
+    width:200px
+}
+.loginButton:disabled{
+    cursor: not-allowed;
+    background-color: rgb(249, 175, 162);
+}
+.LoginRegisterButton{
+    top:60px;
+    right:20px;
+    position: absolute;
+    background-color: teal;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}

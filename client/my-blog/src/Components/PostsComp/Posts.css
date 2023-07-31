@@ -1,0 +1,7 @@
+.Posts{
+    flex:9;
+    display: grid;
+    width: 85%;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-top: 20px;
+}

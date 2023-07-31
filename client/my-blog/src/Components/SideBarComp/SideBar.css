@@ -1,0 +1,66 @@
+.SideBar{
+    flex:3;
+    margin-bottom:30px;
+    margin:20px;
+    background-color: #fdfbfb;
+    display:flex;
+    flex-direction: column;
+    padding: 15px;;
+}
+.sideBarImage{
+    margin-top:15px;
+    width:220px;
+    height:200px;
+    border-radius: 10px;
+}
+.sideBarItem{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.sideBarTitle{
+    margin: 10px;
+    padding:5px;
+    width: 80%;
+    border-top: 1px solid #a7a4a4;
+    border-bottom: 1px solid #a7a4a4;
+    font-size:12px;
+    font-family:'varela Round', 'sans-serif';
+    color:#222;
+    font-weight: 600;
+    line-height:20px;
+    text-align:center;
+}
+.sideBarList{
+    list-style:none;
+    margin-bottom: 30px;
+}
+.sideBarListItem{
+    display:inline-block;
+    width:50%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.sideBarSocial{
+    margin-top:15px;
+    width:250px;
+    display:flex;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.sideBarListItem:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+.sideBarSocial > .fa-brands{
+    color:blue;
+}
+.BioInfo{
+    overflow: hidden;
+ text-overflow: ellipsis;
+ display: -webkit-box;
+ -webkit-line-clamp: 3;
+ -webkit-box-orient: vertical;
+}

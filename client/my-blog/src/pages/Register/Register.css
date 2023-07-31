@@ -1,0 +1,61 @@
+.Register{
+    font-family: 'Arvo', serif;
+    height:calc(100vh - 50px);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background:  linear-gradient(rgba(255,255,255,0.5),
+    rgba(255,255,255,0.5)),url('https://img.freepik.com/free-photo/copy-space-surrounded-by-office-supplies_23-2148475345.jpg');
+    background-size: cover;
+    align-items: center;
+}
+.RegisterTitle{
+    font-size: 50px;
+}
+.RegisterForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width:550px
+}
+.RegisterForm > label{
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+}
+.RegisterInput{
+    padding:10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+.RegisterButton{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: teal;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    padding:10px;
+    align-self: center;
+    width:200px
+}
+.RegisterLoginButton{
+    top:60px;
+    right:20px;
+    position: absolute;
+    background-color: lightcoral;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+    width:90px;
+}
+.ErrorMessage{
+    color: red;
+    font-family: sans-serif;
+}
