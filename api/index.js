@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-const express = require("express");
-const app = express();
-const dotenv = require("dotenv")
-const fs = require("fs");
-=======
+
 const express=require("express");
 const app=express();
 const fs = require("fs");
 const dotenv=require("dotenv")
->>>>>>> bdd0f1b95473f99abef9109ab7753aad16af8af0
 var cors = require('cors')
 const mongoose = require("mongoose")
 const authRoute = require("./routes/auth")
@@ -45,8 +39,6 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 //To see all the images:
 app.get("/api/images/list", (req, res) => {
   const imagesDirectory = path.join(__dirname, "images");
-<<<<<<< HEAD
-=======
 
   // Read the contents of the "images" directory
   fs.readdir(imagesDirectory, (err, files) => {
@@ -80,9 +72,6 @@ app.get("/api/images/:filename", (req, res) => {
   // Send the image as the response
   res.sendFile(imagePath);
 });
-
->>>>>>> bdd0f1b95473f99abef9109ab7753aad16af8af0
-
   // Read the contents of the "images" directory
   fs.readdir(imagesDirectory, (err, files) => {
     if (err) {
