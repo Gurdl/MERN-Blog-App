@@ -3,9 +3,8 @@ import pic from '../../pictures/post1.jpg'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import './Post.css'
 export default function Post({ post }) {
-    const PF = "http://localhost:5000/images/"
+    const PF = "https://blog-mern-app-run4.onrender.com/api/images/"
     const createdAtDate = new Date(post.createdAt);
-
     // Format the date to a readable string
     const formattedDate = createdAtDate.toLocaleString("en-US", {
         year: 'numeric',

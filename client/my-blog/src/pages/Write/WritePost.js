@@ -26,9 +26,9 @@ export default function WritePost() {
             data.append("file", file);
             newPost.photo = filename
             try {
-                const URL="http://localhost:5000/api/upload"
+                // const URL="http://localhost:5000/api/upload"
             
-                await axios.post(URL, data);
+                await axios.post('/upload', data);
 
             } catch (err) {
                 console.log("Cannot upload this file"+err);
@@ -36,9 +36,9 @@ export default function WritePost() {
             }
         }
         try{
-            const URL="http://localhost:5000/api/posts/"
+            // const URL="http://localhost:5000/api/posts/"
             
-           const res= await axios.post(URL, newPost);
+           const res= await axios.post("/posts/", newPost);
            console.log("res.data should have id :");
            console.dir(res.data);
            window.location.replace("/post/"+res.data._id)
