@@ -70,4 +70,15 @@ router.get("/:id",async(req,res)=>
     }
 
 })
+//Get all user:
+router.get("/", async (req, res) => {
+    try {
+        const users = await User.find(); // Fetch all users from the User model
+        res.json(users);
+
+    } catch (error) {
+        res.status(400).json("User Not Found");
+    }
+
+})
 module.exports = router
