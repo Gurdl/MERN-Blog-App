@@ -5,7 +5,7 @@ import myImage from '../../pictures/pic.jpg'
 import './TopBar.css'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 export default function TopBar() {
-    const PF="http://localhost:5000/images/"
+    const PF="https://blog-mern-app-run4.onrender.com/api/images/"
     const { user, dispatch } = useContext(Context);
     const handleLogout = () => {
         dispatch({ type: 'LOGOUT'});
