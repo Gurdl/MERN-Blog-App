@@ -1,8 +1,8 @@
 
-const express=require("express");
-const app=express();
+const express = require("express");
+const app = express();
 const fs = require("fs");
-const dotenv=require("dotenv")
+const dotenv = require("dotenv")
 var cors = require('cors')
 const mongoose = require("mongoose")
 const authRoute = require("./routes/auth")
@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGO_URL).then(() => {
   .catch((err) => {
     console.error("Error connecting to MongoDB:", err);
   });
-  
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "images")
@@ -71,7 +71,6 @@ app.get("/api/images/:filename", (req, res) => {
 
   // Send the image as the response
   res.sendFile(imagePath);
-});
   // Read the contents of the "images" directory
   fs.readdir(imagesDirectory, (err, files) => {
     if (err) {
@@ -87,6 +86,7 @@ app.get("/api/images/:filename", (req, res) => {
 
     res.status(200).json(imageFiles);
   });
+});
 //Get image by name
 app.get("/api/images/:filename", (req, res) => {
   const filename = req.params.filename;
