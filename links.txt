@@ -1,0 +1,4 @@
+Build logs:        https://app.netlify.com/sites/stalwart-salamander-909c4d/deploys/64c83d8c56edae0095c28a69
+Function logs:     https://app.netlify.com/sites/stalwart-salamander-909c4d/functions
+Unique deploy URL: https://64c83d8c56edae0095c28a69--stalwart-salamander-909c4d.netlify.app
+Website URL:       https://stalwart-salamander-909c4d.netlify.app
