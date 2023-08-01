@@ -87,7 +87,6 @@ app.get("/api/images/:filename", (req, res) => {
 
     res.status(200).json(imageFiles);
   });
-});
 //Get image by name
 app.get("/api/images/:filename", (req, res) => {
   const filename = req.params.filename;
