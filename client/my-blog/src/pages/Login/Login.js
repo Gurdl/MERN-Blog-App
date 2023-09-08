@@ -11,7 +11,7 @@ export default function Login() {
     e.preventDefault();
     dispatch({ type: 'LOGIN_START' });
     try {
-      const res = await axios.post('/auth/login', {
+      const res = await axios.post('https://blog-mern-app-run4.onrender.com/api/auth/login', {
         userName: userRef.current.value,
         password: passwordRef.current.value
       });

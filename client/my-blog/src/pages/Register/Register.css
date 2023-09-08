@@ -1,36 +1,41 @@
-.Register{
+.Register {
     font-family: 'Arvo', serif;
-    height:calc(100vh - 50px);
-    display:flex;
+    height: calc(100vh - 50px);
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    background:  linear-gradient(rgba(255,255,255,0.5),
-    rgba(255,255,255,0.5)),url('https://img.freepik.com/free-photo/copy-space-surrounded-by-office-supplies_23-2148475345.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)), url('https://img.freepik.com/free-photo/copy-space-surrounded-by-office-supplies_23-2148475345.jpg');
     background-size: cover;
     align-items: center;
 }
-.RegisterTitle{
+
+.RegisterTitle {
     font-size: 50px;
 }
-.RegisterForm{
+
+.RegisterForm {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    width:550px
+    width: 550px
 }
-.RegisterForm > label{
+
+.RegisterForm>label {
     margin: 10px 0;
     font-size: 20px;
     font-family: 'Arvo', serif;
     font-weight: bold;
 }
-.RegisterInput{
-    padding:10px;
+
+.RegisterInput {
+    padding: 10px;
     background-color: white;
     border: none;
     border-radius: 5px;
 }
-.RegisterButton{
+
+.RegisterButton {
     margin-top: 20px;
     margin-bottom: 10px;
     background-color: teal;
@@ -38,13 +43,14 @@
     cursor: pointer;
     color: white;
     border-radius: 5px;
-    padding:10px;
+    padding: 10px;
     align-self: center;
-    width:200px
+    width: 200px
 }
-.RegisterLoginButton{
-    top:60px;
-    right:20px;
+
+.RegisterLoginButton {
+    top: 60px;
+    right: 20px;
     position: absolute;
     background-color: lightcoral;
     border: none;
@@ -53,9 +59,31 @@
     color: white;
     border-radius: 5px;
     font-size: 17px;
-    width:90px;
+    width: 90px;
 }
-.ErrorMessage{
+
+.ErrorMessage {
     color: red;
     font-family: sans-serif;
+}
+
+@media screen and (max-width:480px) {
+    .Register {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .RegisterTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .RegisterForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top:-165px
+    }
 }

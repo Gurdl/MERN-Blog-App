@@ -1,0 +1,19 @@
+.Loader{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerLoader{
+    height: 90px;
+    width: 90px;
+    border: 12px solid #e3e3e3;
+    border-radius: 50%;
+    border-right-color: #d88484;;
+    animation:spin 1s ease infinite
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}

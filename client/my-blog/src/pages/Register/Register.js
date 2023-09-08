@@ -13,7 +13,7 @@ export default function Register() {
     e.preventDefault();
     try {
       const url = 'http://localhost:5000/api/auth/register'
-      const res = await axios.post('auth/register', {
+      const res = await axios.post('https://blog-mern-app-run4.onrender.com/api/auth/register', {
         userName,
         email,
         password

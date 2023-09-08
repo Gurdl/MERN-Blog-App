@@ -5,3 +5,8 @@
     grid-template-columns: 1fr 1fr 1fr ;
     margin-top: 20px;
 }
+@media screen and (max-width:480px) {
+    .Posts{
+        grid-template-columns: auto;
+    }
+}

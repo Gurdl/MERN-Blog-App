@@ -64,3 +64,8 @@
  -webkit-line-clamp: 3;
  -webkit-box-orient: vertical;
 }
+@media screen and (max-width:480px) {
+    .SideBar{
+        display: none;
+    }
+}

@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
-    background-color:#fdfbfb;
+    background-color: #fdfbfb;
     z-index: 1000;
 }
 
@@ -25,40 +25,89 @@
 .ProfilePic {
     width: 40px;
     height: 40px;
-    margin-right:10px;
+    margin-right: 10px;
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
 }
-.fa-brands{
-    font-size:20px;
-    margin-right:10px;
-    color:#444;
+
+.fa-brands {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #444;
     transition: transform 0.3s;
 }
-  
-  .fa-brands:hover {
+
+.fa-brands:hover {
     transform: scale(1.4);
-    color:skyblue;
+    color: skyblue;
     font-weight: bold;
-  }
-.topList{
-    display:flex;
-    list-style:none;
+}
+
+.topList {
+    display: flex;
+    list-style: none;
     justify-content: center;
 }
-.topListItem{
-    margin-right:20px;
-    font-size:18px;
+
+.topListItem {
+    margin-right: 20px;
+    font-size: 18px;
     font-weight: 300;
 }
-.topListItem:hover{
+
+.topListItem:hover {
     text-decoration: underline;
     font-weight: bold;
-    color:skyblue;
+    color: skyblue;
 }
-.fa-solid{
+
+.fa-solid {
     font-size: 18px;
-    color:#666;
+    color: #666;
     cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    .Center {
+        display: none;
+    }
+
+    .CenterMobileView {
+        rder: 3;
+        width: 95%;
+        margin: 10px;
+        top: 6px;
+        height: 759px;
+        display: block;
+        position: absolute;
+        /* grid-template-columns: auto; */
+        top: 63px;
+        /* left: 48px; */
+        border: 1px solid lightcoral;
+        border-radius: 18px;
+        background: #f5f2f2;
+        color: #fd0909;
+        font-style: oblique;
+    }
+
+    .allLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80%;
+    }
+
+    .linksItems {
+        font-size: 34px;
+    }
+
+    .topRight {
+        gap: 10px;
+    }
+
+    .dottedBtn {
+        border-bottom: 2px solid black;
+    }
+
 }

@@ -2,6 +2,7 @@ import React, { useEffect,useContext } from 'react'
 import { useState } from 'react';
 import axios from "axios"
 import OurPic from '../../pictures/pic.jpg'
+import OurImg from '../../pictures/headerImage.jpg'
 import { Context } from '../../Context/Context';
 import { v4 as uuidv4 } from 'uuid';
 import './SideBar.css'
@@ -23,11 +24,10 @@ export default function SideBar() {
       <div className="sideBarItem">
         <span className="sideBarTitle">ABOUT ME</span><br></br>
 
-        <img src={ user ? PF+user.profilePic : "https://www.glideit.org/images/starting_a_blog.png"} className="sideBarImage" alt=''></img>
+        <img src={ user ? PF+user.profilePic : OurImg} className="sideBarImage" alt=''></img>
         <p className='BioInfo'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-          vitae consequuntur. Cumque esse neque eaque, aspernatur animi dolorem,
-          doloribus accusantium voluptas porro ipsa repellendus ullam quasi aut ab vel molestias.
+          Blogs are really helpful way to share knowledge with different types of audiance. This 
+          is a blog posting platform where you can upload pictures and write different types of blogs.
         </p>
       </div>
       <div className="sideBarItem">

@@ -3,7 +3,7 @@ import pic from '../../pictures/post1.jpg'
 import { Link, useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 import './SinglePost.css'
 import axios from 'axios';
-
+import OurImg from '../../pictures/headerImage.jpg'
 import { Context } from '../../Context/Context';
 export default function SinglePost() {
     const [imageDataFetched, setImageDataFetched] = useState(false);
@@ -19,7 +19,7 @@ export default function SinglePost() {
     useEffect(() => {
         const getPost = async () => {
             try {
-                const res = await axios.get("/posts/" + path);
+                const res = await axios.get("https://blog-mern-app-run4.onrender.com/api/posts/" + path);
                 setPost(res.data);
                 setTitle(res.data.title);
                 setDesc(res.data.desc);
@@ -38,7 +38,7 @@ export default function SinglePost() {
     const getImage = async () => {
         try {
             console.log(post.photo);
-            const res = await axios.get("/images/" + post.photo, {
+            const res = await axios.get("https://blog-mern-app-run4.onrender.com/api/images/" + post.photo, {
                 responseType: 'arraybuffer', // Set the response type to 'arraybuffer'
             });
             const base64Data = btoa(
@@ -63,7 +63,7 @@ export default function SinglePost() {
         try {
 
             const postId = post.id;
-            const res = await axios.delete("/posts/" + post._id, {
+            const res = await axios.delete("https://blog-mern-app-run4.onrender.com/api/posts/" + post._id, {
                 data: {
                     username: user.userName
                 }
@@ -79,7 +79,7 @@ export default function SinglePost() {
         try {
 
             const postId = post.id;
-            const res = await axios.put("/posts/" + post._id, {
+            const res = await axios.put("https://blog-mern-app-run4.onrender.com/api/posts/" + post._id, {
                 username: user.userName,
                 title: title,
                 desc: desc
@@ -105,7 +105,7 @@ export default function SinglePost() {
     return (
         <div className='SinglePost'>
             <div className="SinglePostWrapper">
-                {imageData && <img className="SinglePostImg" src={imageData} alt=""></img>}
+                {imageData ? <img className="SinglePostImg" src={imageData} alt=""></img> : OurImg}
 
 
                 {updateMode ? <input type='text' value={title} className='SinglePostTitleInput' onChange={(e) => (setTitle(e.target.value))}></input> :

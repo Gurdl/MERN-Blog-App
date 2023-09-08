@@ -5,6 +5,7 @@ import TopBar from './Components/TopBarComp/TopBar';
 import Home from './pages/Home/Home';
 import About from './Components/SideBarComp/SideBar'
 import WritePost from './pages/Write/WritePost';
+import Loader  from './Components/Loader/Loader';
 import { useContext } from 'react'
 import { Context } from './Context/Context'
 import Setting from './pages/Setting/Setting';
@@ -26,7 +27,7 @@ function App() {
       <TopBar></TopBar>
       <Switch>
         <Route path='/' component={Home} exact />
-        <Route path='/About' component={About} />
+        <Route path='/About' component={Loader} />
         <Route path='/Register' component={user ? Home : Register} />  {/* condiotional Renedering  only if there is user */}
         <Route path='/Login' component={user ? Home : Login} />
         <Route path='/Settings' component={user ? Setting : Register} />

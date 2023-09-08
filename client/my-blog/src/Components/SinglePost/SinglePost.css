@@ -63,6 +63,8 @@
 
 .singlePostDisc {
     font-family: 'Varela', sans-serif;
+    font-size: 25px;
+    line-height: 2.5;
 }
 .singlePostDiscInput{
     font-family: 'Varela', sans-serif;
