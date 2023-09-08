@@ -18,8 +18,11 @@ export default function Post({ post }) {
     return (
         <div className='post'>
             <div className='Photo'>
+            {console.log(PF + post.photo)}
             {post.photo &&
+           
                 (
+                    
                     <img className="postPic" src={PF + post.photo ? PF + post.photo : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIzKdpSJyngovASqcV29FekpMklEb0Tw_yKZdR608j_IbMGSYsSDkhZp3QseYNcqaNd6g&usqp=CAU"} alt=""></img>
                 )}
             </div>

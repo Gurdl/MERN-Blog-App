@@ -3,7 +3,9 @@ import Header from './Components/HeaderComp/Header';
 import Single from './pages/Single/Single';
 import TopBar from './Components/TopBarComp/TopBar';
 import Home from './pages/Home/Home';
-import About from './Components/SideBarComp/SideBar'
+import About from './pages/About/About';
+import Contact from './pages/Contact/Conatct';
+// import About from './Components/SideBarComp/SideBar'
 import WritePost from './pages/Write/WritePost';
 import Loader  from './Components/Loader/Loader';
 import { useContext } from 'react'
@@ -27,12 +29,13 @@ function App() {
       <TopBar></TopBar>
       <Switch>
         <Route path='/' component={Home} exact />
-        <Route path='/About' component={Loader} />
+        <Route path='/About' component={About} />
         <Route path='/Register' component={user ? Home : Register} />  {/* condiotional Renedering  only if there is user */}
         <Route path='/Login' component={user ? Home : Login} />
+        <Route path='/Contact' component={Contact} />
         <Route path='/Settings' component={user ? Setting : Register} />
         <Route path='/Write' component={ user ? WritePost : Register} />
-        <Route path='/Documentation' component={ Documents} />
+        {/* <Route path='/Documentation' component={ Documents} /> */}
         <Route path='/post/:postId' component={Single} />
       </Switch>
     </>

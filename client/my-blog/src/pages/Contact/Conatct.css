@@ -1,0 +1,163 @@
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.contacts-left {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacts-right {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputText {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    height: 40px;
+    border: 2px solid lightcoral;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.textArea {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    border: 2px solid lightcoral;
+
+}
+.button{
+    border: none;
+    border-radius: 35px;
+    color: white;
+    font-size: 15px;
+    padding: 11px 26px 11px 26px;
+    background: lightcoral;
+    box-shadow: 0px 20px 24px 3px rgba(251, 161,40,0.42);
+  }
+  .button:hover{
+    background: rgb(219, 48, 48);
+    cursor: pointer;
+    color: white;
+    border: 1px solid var(--orange);
+  }
+.ContactsHeading1 {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 5rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-style: italic;
+
+}
+
+.ContactsHeading2 {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 6rem;
+    color: lightcoral;
+
+}
+
+.contactsForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactsbtn {
+    display: flex;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: none;
+}
+
+/* The loader */
+loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid lightcoral;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    position: relative;
+}
+
+.loader::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logoImg {
+
+    border: 50%;
+
+}
+
+.Checklogo {
+    border-radius: 20px;
+    background-color: lightcoral;
+    width: 200px
+}
+
+.succefulMessage {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactAgain {
+    box-shadow: none;
+}
+
+@media screen and (max-width:480px) {
+    .contacts {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacts-left {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacts-right {
+        width: 400px;
+        margin-left: 65px;
+    }
+
+    .ContactsHeading2 {
+        margin-left: 43px
+    }
+}

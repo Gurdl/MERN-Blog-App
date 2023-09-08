@@ -47,7 +47,7 @@ export default function TopBar() {
                     <li className='topListItem linksItems'>
                         <Link to='/About' className="link" onClick={()=>{setIsCenterMobileView(false)}}>ABOUT</Link>
                     </li>
-                    <li className='topListItem linksItems' onClick={()=>{setIsCenterMobileView(false)}}>CONTACT</li>
+                    <li className='topListItem linksItems'> <Link to='/Contact' className="link" onClick={()=>{setIsCenterMobileView(false)}}>CONTACT</Link> </li>
                     <li className='topListItem linksItems'>
                         <Link to='/Write' className="link" onClick={()=>{setIsCenterMobileView(false)}}>WRITE</Link>
                     </li>

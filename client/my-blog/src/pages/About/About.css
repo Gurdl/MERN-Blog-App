@@ -1,0 +1,42 @@
+.about{
+    width: 80vw;
+    height: 100vh;
+  
+}
+.HomeImage{
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+}
+.about_topImage{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
+.about_heading{
+    width: 100vw;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About_description{
+   
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: 10%;
+    font-size: 20px;
+}
+.About_description>h1{
+    margin-left: 25px;
+}
+.About_description>p{
+    font-size: 30px;
+}
