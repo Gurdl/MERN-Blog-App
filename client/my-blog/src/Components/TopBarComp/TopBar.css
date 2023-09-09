@@ -66,6 +66,10 @@
     font-size: 18px;
     color: #666;
     cursor: pointer;
+    position: absolute;
+    top: 36%;
+    width: 50%;
+    left: 92%;
 }
 
 @media screen and (max-width:480px) {
@@ -73,41 +77,63 @@
         display: none;
     }
 
-    .CenterMobileView {
-        rder: 3;
-        width: 95%;
-        margin: 10px;
-        top: 6px;
-        height: 759px;
-        display: block;
+    .topLeft {
+        margin-left: -38px;
+    }
+
+    .topList {
         position: absolute;
-        /* grid-template-columns: auto; */
-        top: 63px;
-        /* left: 48px; */
-        border: 1px solid lightcoral;
-        border-radius: 18px;
-        background: #f5f2f2;
-        color: #fd0909;
-        font-style: oblique;
+        top: 36%;
+        width: 50%;
+        left: 36%;
+    }
+
+    .CenterMobileView {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        height: 159px;
+        position: absolute;
+        width: 100%;
+        top: 67px;
+        color: white;
+        transition: height 200ms ease;
+        overflow: hidden;
     }
 
     .allLinks {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 80%;
+        height: 44%;
+        position: absolute;
+        left: -2%;
+        width: 100%;
     }
 
     .linksItems {
-        font-size: 34px;
+        font-size: 16px;
+        margin: 2px;
+        width: 100%;
     }
 
-    .topRight {
-        gap: 10px;
+    .profilePicRightSiide {
+        position: relative;
+        right: -18%;
     }
 
     .dottedBtn {
         border-bottom: 2px solid black;
+    }
+
+    .mobile_logout_button {
+        display: flex;
+        background-color: lightcoral;
+        position: relative;
+        left: -9%;
+        width: 110%;
+        justify-content: center;
+        align-items: center;
     }
 
 }

@@ -13,7 +13,8 @@ export default function SideBar() {
   const[cat,setCat]=useState([]);
   useEffect(()=>{
    const getCats=async()=>{
-        const res = await axios.get("/categories")  //Here path would be an id like : 64c15f27ad784035157e4f50
+        //Get all the categories
+        const res = await axios.get("https://blog-mern-app-run4.onrender.com/api/categories")  //Here path would be an id like : 64c15f27ad784035157e4f50
          setCat(res.data);
     };
     getCats();

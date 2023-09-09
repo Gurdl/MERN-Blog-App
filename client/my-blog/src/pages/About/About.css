@@ -1,14 +1,16 @@
-.about{
+.about {
     width: 80vw;
     height: 100vh;
-  
+
 }
-.HomeImage{
+
+.HomeImage {
     width: 100vw;
     height: 50vh;
     position: relative;
 }
-.about_topImage{
+
+.about_topImage {
     width: 80%;
     height: 100%;
     position: absolute;
@@ -16,15 +18,17 @@
     transform: translateX(-50%);
     border-radius: 50px;
 }
-.about_heading{
+
+.about_heading {
     width: 100vw;
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.About_description{
-   
+
+.About_description {
+
     justify-self: center;
     display: flex;
     justify-content: center;
@@ -34,9 +38,39 @@
     left: 10%;
     font-size: 20px;
 }
-.About_description>h1{
+
+.About_description>h1 {
     margin-left: 25px;
 }
-.About_description>p{
+
+.About_description>p {
     font-size: 30px;
+}
+
+@media screen and (max-width:480px) {
+    .about {
+        width: 98%;
+    }
+
+    .about_topImage {
+        width: 95%;
+        height: 66%;
+        position: absolute;
+        left: 52%;
+        transform: translateX(-50%);
+        border-radius: 15px;
+    }
+    .about_heading{
+        position: absolute;
+        top: 40%;
+    }
+    .About_description{
+        top: -5%;
+        left: 0%;
+    }
+    .About_description>p {
+        font-size: 29px;
+        left: 4%;
+        position: relative;
+    }
 }

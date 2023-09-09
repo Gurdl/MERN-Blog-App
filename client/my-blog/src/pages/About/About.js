@@ -13,7 +13,7 @@ return (
         <p>Blog websites serve various purposes and offer a range of benefits for individuals and organizations. Here
             are some reasons why we need blog websites and how they can be useful:</p>
         <ul className="unordered lists">
-            <li><b>Information Sharing:</b>> Blogs are an excellent platform for sharing information, knowledge, and
+            <li><b>Information Sharing:</b> Blogs are an excellent platform for sharing information, knowledge, and
                 expertise on a particular subject. They allow individuals to communicate their thoughts, experiences,
                 and insights with a global audience. This can be helpful for personal expression or for disseminating
                 valuable information to others.</li>

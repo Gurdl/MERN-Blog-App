@@ -43,11 +43,11 @@ export default function WritePost() {
         try {
             // const URL="http://localhost:5000/api/posts/"
 
-            const res = await axios.post("/posts/", newPost);
+            const res = await axios.post("https://blog-mern-app-run4.onrender.com/api/posts/", newPost);
             console.log("res.data should have id :");
             console.dir(res.data);
             setLoader(false);
-            window.location.replace("/post/" + res.data._id)
+            window.location.replace("/")
 
         }
         catch (error) {
@@ -60,8 +60,9 @@ export default function WritePost() {
     return (
 
         <div className='Write'>
-            {loader ? <Loader></Loader> : <>{file && <img src={URL.createObjectURL(file)} className="WriteImage" alt=""></img>} <form className="WriteForm" onSubmit={formSubmit}>
-                <div ><button type="submit" className='WriteSubmit'>Publish</button></div>
+            {file && <img src={URL.createObjectURL(file)} className="WriteImage" alt=""></img>}
+            {loader ? <Loader></Loader> : <> <form className="WriteForm" onSubmit={formSubmit}>
+                <div className='Publish'><button type="submit" className='WriteSubmit'>Publish</button></div>
                 <div className="WriteFormGroup">
                     <label htmlFor='fileInput'>
                         <i className="WriteIcon fa-solid fa-plus fa-lg" ></i>

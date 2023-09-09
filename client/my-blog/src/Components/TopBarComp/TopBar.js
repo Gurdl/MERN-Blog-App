@@ -54,14 +54,14 @@ export default function TopBar() {
                     {/* <li className='topListItem linksItems'>
                         <Link to='/Documentation' className="link" onClick={()=>{setIsCenterMobileView(false)}}>DOCUMENTATION</Link>
                     </li> */}
-                    <li className='topListItem linksItems' onClick={()=>{handleLogout();setIsCenterMobileView(false)}}>
+                    <li className='topListItem linksItems mobile_logout_button' onClick={()=>{handleLogout();setIsCenterMobileView(false)}}>
                         {user ? 'LOGOUT' : ''}
                     </li>
                 </ul>
             </div>
             <div className="topRight">
                 {user ?
-                    <Link to="/Settings"><img className="ProfilePic" src={PF + user.profilePic} alt="" />
+                    <Link  className="profilePicRightSiide" to="/Settings"><img className="ProfilePic" src={PF + user.profilePic} alt="" />
                     </Link> :
                     (
                         <>
@@ -76,8 +76,7 @@ export default function TopBar() {
                             </ul>
                         </>
                     )}
-                <i className="fa-solid fa-magnifying-glass"></i>
-                {windowWidth < 900 ? <i className="fa-solid fa-grip-lines dottedBtn" onClick={showNabBar}></i> : ""}
+                {windowWidth < 900 ? <i className="fa-solid fa-bars" onClick={showNabBar}></i> : ""}
 
             </div>
 

@@ -26,6 +26,8 @@
 }
 
 .WriteIcon {
+    position: relative;
+    left: 1%;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -77,13 +79,23 @@
         align-items: center;
     }
 
+    .Publish {
+        position: absolute;
+        left: 10%;
+    }
+
     .WriteSubmit {
         position: sticky;
-        /* top: 584px; */
         left: 114px;
         width: 119px;
         height: 40ps;
         height: 50px;
+    }
+
+    .WriteFormGroup {
+        position: relative;
+        top: 50px;
+        left: -26%
     }
 
 }
